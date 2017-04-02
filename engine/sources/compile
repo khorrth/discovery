@@ -1,0 +1,9 @@
+#!/bin/sh
+
+javac \
+      khorrth/discovery/scene/*.java \
+		khorrth/discovery/*.java \
+		-d . \
+      -cp ../../libraries/android-platform-25.jar \
+      -target 1.7 \
+      -source 1.7

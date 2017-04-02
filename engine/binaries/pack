@@ -1,0 +1,4 @@
+#!/bin/sh
+
+aapt add \
+         -f ../../Discovery.apk.unsigned.unaligned classes.dex

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+aapt package \
+             -f -m \
+             -M metadata/AndroidManifest.xml \
+             -I libraries/android-platform-25.jar \
+             -F Discovery.apk.unsigned.unaligned \
+             -J engine/sources/ \
+             -S resources/res/

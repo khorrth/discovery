@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mkdir keys
+
+keytool \
+        -genkey \
+        -v \
+        -keystore keys/discovery-release-key.jks \
+        -keyalg RSA \
+        -keysize 2048 \
+        -validity 10000 \
+        -alias discovery-release-key \
+        -dname "CN=Alexandr Gulak, OU=Development, O=Khorrthean, L=Kiev,
+        ST=Kiev Oblast, C=UA" \
+        -keypass rache11 \
+        -storepass rache11 \
+        -noprompt
+

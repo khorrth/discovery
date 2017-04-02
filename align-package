@@ -1,0 +1,7 @@
+#/bin/sh
+
+zipalign \
+         -v \
+         -p 4 \
+         Discovery.apk.unsigned.unaligned \
+         Discovery.apk.unsigned

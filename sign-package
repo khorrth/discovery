@@ -1,0 +1,7 @@
+#!/bin/sh
+
+apksigner sign \
+               --ks keys/discovery-release-key.jks \
+               --ks-pass "pass:rache11"\
+               Discovery.apk.unsigned
+mv Discovery.apk.unsigned Discovery.apk

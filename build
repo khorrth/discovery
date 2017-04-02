@@ -1,0 +1,20 @@
+#!/bin/sh
+
+./clean
+
+./create-package
+
+cd engine/sources/
+./compile
+./dex
+cd ../../
+
+cd engine/binaries/
+./pack
+cd ../../
+
+./align-package
+# ./generate-release-key
+./sign-package
+
+./clean

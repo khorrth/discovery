@@ -1,0 +1,7 @@
+#!/bin/sh
+rm engine/binaries/classes.dex
+rm engine/sources/khorrth/discovery/*.class
+rm engine/sources/khorrth/discovery/scene/*.class
+#rm Discovery.apk
+rm Discovery.apk.unsigned.unaligned
+#rm keys/discovery-release-key.jks
